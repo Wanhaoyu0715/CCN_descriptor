@@ -1,0 +1,113 @@
+****************************************************************
+  Sure Independence Screening and Sparsifying Operator (SISSO)  
+             Version SISSO.3.2, September, 2022.                
+****************************************************************
+
+Read in data from train.dat.
+Read in parameters from SISSO.in
+Property type:     1
+Number of tasks:        1
+Descriptor dimension:        3
+Number of samples for each task:    11550
+Restarts :  0
+Number of scalar features:       13
+Tier of the feature space:        2
+Maximal feature complexity (number of operators in a feature):        3
+Units of the input primary features (each represented by a vector): 
+
+
+
+
+
+
+
+
+
+
+
+
+
+The feature will be discarded if the minimum of the maximal abs. value in it <    0.10000E-02
+The faature will be discarded if the maximum of the maximal abs. value in it >     0.10000E+06
+Size of the SIS-selected (single) subspace :       20      20      20
+Operators for feature construction: (+)(-)(*)(/) (+)(-)(*)(/) 
+Fitting intercept:      T
+Metric for model selection: RMSE
+Method for sparse regression:  L0        
+Number of the top-ranked models to output:      100
+--------------------------------------------------------------------------------
+
+Dimension:   1
+-------------------
+Feature Construction (FC) starts ...
+Population Standard Deviation (SD) of task 001:   10.78740
+Total number of features in the space phi00:             13
+Total number of features in the space phi01:            469
+Total number of features in the space phi02:         475024
+Size of the SIS-selected subspace from phi02:         20
+Time (second) used for this FC:           20.24
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all iterations:         20
+  1D descriptor (model): 
+RMSE and MaxAE:   4.021363 37.440386
+@@@descriptor: 
+                      1:[((Col3_23-cn_ratio)-(Col3_32+cn_ratio))]
+       coefficients_001:     0.3190582837E+03
+          Intercept_001:    -0.1106053140E+04
+         RMSE,MaxAE_001:     0.4021362956E+01    0.3744038567E+02
+--------------------------------------------------------------------------------
+Time (second) used for this DI:            0.21
+
+Dimension:   2
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space phi00:             13
+Total number of features in the space phi01:            469
+Total number of features in the space phi02:         475024
+Size of the SIS-selected subspace from phi02:         20
+Time (second) used for this FC:           20.39
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all iterations:         40
+  2D descriptor (model): 
+RMSE and MaxAE:   2.693143 24.609676
+@@@descriptor: 
+                      6:[((mid/cn_ratio)/(mid*cn_ratio))]
+                     17:[((Col3_23-Col3_32)-cn_ratio)]
+       coefficients_001:    -0.1820640160E+03    0.1876757372E+03
+          Intercept_001:    -0.4200154305E+03
+         RMSE,MaxAE_001:     0.2693143446E+01    0.2460967615E+02
+--------------------------------------------------------------------------------
+Time (second) used for this DI:            0.40
+
+Dimension:   3
+-------------------
+Feature Construction (FC) starts ...
+Total number of features in the space phi00:             13
+Total number of features in the space phi01:            469
+Total number of features in the space phi02:         475024
+Size of the SIS-selected subspace from phi02:         20
+Time (second) used for this FC:           21.53
+
+Descriptor Identification (DI) starts ...
+Total number of SIS-selected features from all iterations:         60
+
+Final model/descriptor !
+================================================================================
+  3D descriptor (model): 
+RMSE and MaxAE:   2.588136 23.561981
+@@@descriptor: 
+                      6:[((mid/cn_ratio)/(mid*cn_ratio))]
+                     17:[((Col3_23-Col3_32)-cn_ratio)]
+                     41:[((Col3_23+Col3_33)*(Col3_32/Col3_11))]
+       coefficients_001:    -0.1769671276E+03    0.1891880779E+03   -0.1130020135E+02
+          Intercept_001:    -0.4236150295E+03
+         RMSE,MaxAE_001:     0.2588135954E+01    0.2356198089E+02
+================================================================================
+Time (second) used for this DI:            5.65
+
+Total time (second):           70.52
+
+Have a nice day !    
+
