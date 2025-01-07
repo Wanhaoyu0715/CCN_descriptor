@@ -53,7 +53,8 @@ cn_changes_ratios = [calculate_cn_changes(item.toatoms(), a, b) for item in tqdm
 - `btm_proportion(atoms)`: Calculates the proportion of Cr atoms in the layer with height less than 11.5.
 - `analyze_coordination(atoms)`: Analyzes the coordination number matrix of atoms.
 - `calculate_cn_changes(atoms, a, b)`: Calculates the ratio of coordination number changes within a given bond length range.
-```
+
+
 ### Example
 
 Below is a simple example demonstrating how to use the code for analysis:
